@@ -1,0 +1,97 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {display: flex;
+  justify-content: center;
+  align-items: center;}
+.parent {position: relative;}
+.parent > div { position: absolute; width: 100px; height: 100px;}
+.green {border: solid 2px green;}
+.red {border: solid 2px red;}
+.blue {border: solid 2px blue;}
+.yellow {border: solid 2px yellow;}
+.green {animation-name: liniag, krugg;
+    animation-duration: 3s, 3s;
+    animation-timing-function: linear, ease-out;
+    animation-delay: 1s, 4s;
+    animation-iteration-count: 1, 4;
+    animation-direction: normal, normal;
+    animation-fill-mode: forwards, forwards;
+    animation-play-state: running, running;
+    }
+.red {
+    animation-name: liniar, krugr;
+    animation-duration: 3s, 3s;
+    animation-timing-function: linear, ease-out;
+    animation-delay: 1s, 4s;
+    animation-iteration-count: 1, 4;
+    animation-direction: normal, normal;
+    animation-fill-mode: forwards, forwards;
+    animation-play-state: running, running;}
+.blue {
+    animation-name: liniab, krugb;
+    animation-duration: 3s, 3s;
+    animation-timing-function: linear, ease-out;
+    animation-delay: 1s, 4s;
+    animation-iteration-count: 1, 4;
+    animation-direction: normal, normal;
+    animation-fill-mode: forwards, forwards;
+    animation-play-state: running, running;}
+.yellow {
+    animation-name: liniay, krugy;
+    animation-duration: 3s, 3s;
+    animation-timing-function: linear, ease-out;
+    animation-delay: 1s, 4s;
+    animation-iteration-count: 1, 4;
+    animation-direction: normal, normal;
+    animation-fill-mode: forwards, forwards;
+    animation-play-state: running, running;
+     }
+@keyframes liniag {
+       from {transform: translate(0);}
+       to {transform: translate(80px, -80px);}
+     }
+@keyframes liniar {
+       from {transform: translate(0);}
+       to {transform: translate(-80px, -80px);}
+     }
+@keyframes liniab {
+       from {transform: translate(0);}
+       to {transform: translate(80px, 80px);}
+     }
+@keyframes liniay {
+       from {transform: translate(0);}
+       to {transform: translate(-80px, 80px);}
+     }
+.parent {animation-name: krug;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-delay: 4s;
+    animation-iteration-count: 4;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    }
+@keyframes krug {
+       from {transform: rotate(0deg);}
+       to {transform: rotate(450deg);}
+       }
+@keyframes krugg {
+       from {transform: rotate(0deg); top: 80px; left: -80px; margin-top: -50px; margin-left: -50px;}
+       to {transform: rotate(-450deg); top: 80px; left: -80px; margin-top: -50px; margin-left: -50px;}
+       }
+@keyframes krugr {
+       from {transform: rotate(0deg); top: -80px; left: -80px; margin-top: -50px; margin-left: -50px;}
+       to {transform: rotate(-450deg); top: -80px; left: -80px; margin-top: -50px; margin-left: -50px;}
+       }
+@keyframes krugb {
+       from {transform: rotate(0deg); top: 80px; left: 80px; margin-top: -50px; margin-left: -50px;}
+       to {transform: rotate(-450deg); top: 80px; left: 80px; margin-top: -50px; margin-left: -50px;}
+       }
+@keyframes krugy {
+       from {transform: rotate(0deg); top: -80px; left: 80px; margin-top: -50px; margin-left: -50px;}
+       to {transform: rotate(-450deg); top: -80px; left: 80px; margin-top: -50px; margin-left: -50px;}
+       }
